@@ -8,15 +8,15 @@ public abstract class Batiment  { // Eva et Nino
     private int niveau;
     private static int NIVEAUMAX=5;
     private int pvBat;
-    private static int MINIPVBOT=0;
+    private static int MINIPVBAT=0;
     private int maxPvBat;
 
-    public Batiment (int positionX, int positionY, int niveau, int pvBot, int maxPvBot){ //nino
+    public Batiment (int positionX, int positionY, int niveau, int pvBat, int maxPvBat){ //nino
         this.positionX = positionX;
         this.positionY = positionY;
         this.niveau = niveau;
-        this.pvBat = pvBot;
-        this.maxPvBat = maxPvBot;
+        this.pvBat = pvBat;
+        this.maxPvBat = maxPvBat;
     }
 
     public int GetPositionX() { // Eva 
