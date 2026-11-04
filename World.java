@@ -2,13 +2,14 @@ package Viculus;
 
 import java.util.ArrayList;
 import java.util.List;
-// class fait par Nino et Eva 
+// class fait pas Nino et Eva 
 public class World { 
     private final int minX;
     private final int maxX;
     private final int minY;
     private final int maxY;
     private final List<Personnage> personnages;
+    private final List<Batiment> batiments;
 
     public World(int minX, int maxX, int minY, int maxY) {
         this.minX = minX;
@@ -41,6 +42,10 @@ public class World {
     
     public List<Personnage> GetPersonnages (){ // Eva
         return(this.personnage);
+    }
+
+    public List<Batiment> GetBatiments (){ // Eva
+        return(this.batiments);
     }
 
     public boolean caseOcuppe (int x, int y) { // Nino
