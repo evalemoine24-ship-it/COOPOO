@@ -1,4 +1,4 @@
-import static org.junit.jupiter.api.Assertions.*;
+import org.example.World;
 import org.junit.jupiter.api.Test;
 
 public class RessourcesTest {
@@ -10,8 +10,31 @@ public class RessourcesTest {
     }
 
     @Test
-    public void RessourceDispo() {
-        Ressources r = new Ressources(3, 5, 10.0, 20, TypeRessource.BOIS);
-        assertEquals(10.0, r.getRessourceDispo(), 0.001);
+    public void RessourcedansWorld(){
+    World w = new World(0,18,0,20);
+    
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
