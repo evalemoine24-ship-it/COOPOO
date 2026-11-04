@@ -2,8 +2,8 @@ package Viculus;
 
 import java.util.ArrayList;
 import java.util.List;
-// class fait pas Nino et Eva 
-public class World { 
+
+public class World { //  Nino et Eva 
     private final int minX;
     private final int maxX;
     private final int minY;
