@@ -9,10 +9,10 @@ public class Ressource {
         this.typeR=typeR;
     }
     public int getRposX() {
-        return posX;
+        return rPosX;
     }
     public int getRposY() {
-        return posY;
+        return rPosY;
     }
     public TypeRessource getTypeR() {
         return typeR;
