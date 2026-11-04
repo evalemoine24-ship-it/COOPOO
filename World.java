@@ -1,5 +1,4 @@
-package org.example;
-
+package Viculus;
 import java.util.ArrayList;
 import java.util.List;
 // class fait pas Nino et Eva
@@ -10,7 +9,7 @@ public class World {
     private final int maxY;
     private final List<Personnage> personnages;
     private final List<Batiment> batiments;
-    private final List<Ressource> ressources;
+    private final List<Ressources> ressources;
 
     public World(int minX, int maxX, int minY, int maxY) {
         this.minX = minX;
@@ -43,20 +42,20 @@ public class World {
         return maxY;
     }
 
-    public List<Personnage> GetPersonnages (){ // Eva
+    public List<Personnage> getPersonnages (){ // Eva
         return(this.personnages);
     }
 
-    public List<Batiment> Getbatiments (){ // Eva
+    public List<Batiment> getBatiments (){ // Eva
         return(this.batiments);
     }
-    public List<Ressource> Getressources (){ // Eva
+    public List<Ressources> getRessources (){ // Eva
         return(this.ressources);
     }
 
     public boolean caseOcuppe (int x, int y) { // Nino
         for (Personnage v : personnages) {
-            if (v.getxPosition() == x && v.getyPosition() == y) {
+            if (v.getPosX() == x && v.getPosY() == y) {
                 return true;
             }
         }
@@ -64,10 +63,10 @@ public class World {
     }
 
     public boolean addPersonnage (Personnage v){ // Nino
-        if (caseOcuppe(v.getxPosition(), v.getyPosition())) {
+        if (caseOcuppe(v.getPosX(), v.getPosY())) {
             return false;
         }
-        this.Personnage.add(v);
+        this.personnages.add(v);
         return true;
     }
 }
