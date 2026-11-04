@@ -1,15 +1,16 @@
-package Viculus;
+package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
-
-public class World { //  Nino et Eva 
+// class fait pas Nino et Eva
+public class World {
     private final int minX;
     private final int maxX;
     private final int minY;
     private final int maxY;
     private final List<Personnage> personnages;
     private final List<Batiment> batiments;
+    private final List<Ressource> ressources;
 
     public World(int minX, int maxX, int minY, int maxY) {
         this.minX = minX;
@@ -17,17 +18,19 @@ public class World { //  Nino et Eva
         this.minY = minY;
         this.maxY = maxY;
         this.personnages = new ArrayList<>();
+        this.batiments = new ArrayList<>();
+        this.ressources = new ArrayList<>();
     }
 
     public static World createWolrd (int minX, int maxX, int minY, int maxY) { // Eva
-        if (minX < maxX && minY < maxY) { 
+        if (minX < maxX && minY < maxY) {
             return (new World( minX, maxX, minY, maxY));
         } else {
             return(null);
         }
     }
 
-    public int getMinX() { // Eva 
+    public int getMinX() { // Eva
         return minX;
     }
     public int getMaxX() { // Eva
@@ -39,13 +42,16 @@ public class World { //  Nino et Eva
     public int getMaxY() {// Eva
         return maxY;
     }
-    
+
     public List<Personnage> GetPersonnages (){ // Eva
-        return(this.personnage);
+        return(this.personnages);
     }
 
-    public List<Batiment> GetBatiments (){ // Eva
+    public List<Batiment> Getbatiments (){ // Eva
         return(this.batiments);
+    }
+    public List<Ressource> Getressources (){ // Eva
+        return(this.ressources);
     }
 
     public boolean caseOcuppe (int x, int y) { // Nino
