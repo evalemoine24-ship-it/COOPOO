@@ -2,7 +2,7 @@ package Viculus;
 
 import java.util.ArrayList;
 import java.util.List;
-// class fait pas Nino et Eva 
+// class fait par Nino et Eva 
 public class World { 
     private final int minX;
     private final int maxX;
